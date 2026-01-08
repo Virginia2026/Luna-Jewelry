@@ -80,3 +80,19 @@
       width: 100% !important;
 
     }
+
+    .ourstory-section {
+      width: 100% !important;
+      display: flex !important;
+      background: 
+        linear-gradient(rgba(233, 229, 250, 0.9), rgba(222, 218, 238, 0.9)),
+        url('Luna-pics/Final logo.PNG') !important;
+      background-size: cover !important;
+      background-position: center !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      padding: 50px;
+      box-sizing: border-box !important;
+      text-align: center !important;
+      margin-top: 60px !important;
+    }
