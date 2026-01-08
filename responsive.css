@@ -1,82 +1,82 @@
-/* MOBILE RESPONSIVE ADJUSTMENTS */
+/* ===== MOBILE FIRST (phones <768px) ===== */
 @media (max-width: 768px) {
 
     /* Headings */
     h1, h2, h3, .Model-3 {
-        font-size: 30px;       /* smaller font for mobile */
-        margin-left: 10px;     /* reduce huge side margins */
-        margin-right: 10px;
-        text-align: center;    /* center headings on mobile */
+        font-size: 28px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        text-align: center !important;
     }
 
     /* Paragraphs */
     p {
-        font-size: 16px;       /* adjust text size */
-        margin-left: 10px;
-        margin-right: 10px;
+        font-size: 16px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
     }
 
     /* Product boxes */
     .product-box {
-        width: 100%;           /* stack vertically */
-        margin: 10px 0;        /* space between boxes */
+        width: 100% !important;       /* stack vertically */
+        margin: 10px 0 !important;
+        flex: none !important;
     }
 
     /* Rows of products */
     .products-row {
-        display: flex;
-        flex-direction: column; /* make rows stack on mobile */
-        align-items: center;
+        display: flex !important;
+        flex-direction: column !important; /* stack items */
+        align-items: center !important;
     }
 
     /* Images */
     img {
-        max-width: 100%;       /* prevent overflow */
-        height: auto;
+        max-width: 100% !important;
+        height: auto !important;
     }
 
     /* Sections / banners */
     .section {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 }
 
-/* TABLET RESPONSIVE ADJUSTMENTS */
+/* ===== TABLET (769px–1024px) ===== */
 @media (min-width: 769px) and (max-width: 1024px) {
 
     /* Headings slightly smaller */
     h1, h2, h3, .Model-3 {
-        font-size: 40px;
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: center;
+        font-size: 38px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        text-align: center !important;
     }
 
     /* Paragraphs */
     p {
-        font-size: 18px;
-        margin-left: 20px;
-        margin-right: 20px;
+        font-size: 18px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
     }
 
     /* Product boxes */
     .product-box {
-        width: 45%;           /* two boxes per row */
-        margin: 10px 10px;    /* spacing between boxes */
+        width: 45% !important;        /* two per row */
+        margin: 10px 10px !important;
     }
 
     /* Rows of products */
     .products-row {
-        display: flex;
-        flex-wrap: wrap;      /* allow items to wrap to next line */
-        justify-content: center;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
     }
 
     /* Images */
     img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100% !important;
+        height: auto !important;
     }
 }
-
