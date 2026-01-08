@@ -1,11 +1,309 @@
 /* ======================
-   Responsive CSS for tablets and phones
+   Main Styles (Desktop)
    ====================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, Arial;
+}
 
-/* ===== Tablets: up to 1024px ===== */
+p {
+  margin: 0;
+}
+
+.header-style {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+  height: 905px;
+  width: 1250px;
+  margin-left: 50px;
+  object-fit: cover;
+  z-index: 1;
+  border: 0.1px solid rgba(224, 237, 248, 0.904);
+}
+
+.middle-section {
+  flex: 1;
+  height: 1000px;
+}
+
+.header-image {
+  flex: 1;
+  height: 1000px;
+  object-fit: cover;
+  margin-left: -150px;
+}
+
+.right-section {
+  background-color: black;
+  padding-right: 1px;
+}
+
+.header-text {
+  display: grid;
+  grid-template-rows: 120px 120px 120px;
+  color: white;
+  font-size: 120px;
+  font-weight: 100;
+  letter-spacing: 40px;
+  align-items: center;
+  margin-top: 240px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  width: 900px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.contact-text {
+  font-size: 60px;
+  color: #555;
+  cursor: pointer;
+}
+
+.number-text {
+  display: none;
+}
+
+.toggle:checked + .contact-text .default-text {
+  display: none;
+}
+
+.toggle:checked + .contact-text .number-text {
+  display: inline;
+}
+
+/* ======================
+   Product Section
+   ====================== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 80px;
+  padding: 0 80px;
+  min-height: 840px;
+  box-sizing: border-box;
+}
+
+.product-card {
+  min-height: 840px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 840px;
+  overflow: hidden;
+}
+
+.bracelets-image,
+.bracelet1-model {
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgb(197, 171, 171);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.bracelet1-model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.swap-checkbox:checked + label .bracelets-image {
+  display: none;
+}
+
+.swap-checkbox:checked + label .bracelet1-model {
+  display: block;
+}
+
+.bracelets-image:hover {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.product-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.line-text {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  letter-spacing: 20px;
+  font-weight: 500;
+  color: #333;
+  margin: 20px 0;
+}
+
+.line-text::before,
+.line-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #333;
+  margin: 10px 20px;
+}
+
+.product-description {
+  font-size: 40px;
+  text-align: center;
+}
+
+.price-wrapper {
+  margin-top: 10px;
+}
+
+.price-button {
+  display: inline-block;
+  width: 250px;
+  height: 70px;
+  color: #333;
+  line-height: 70px;
+  font-size: 40px;
+  font-weight: 200;
+  border-radius: 20px;
+  border: 3px solid #c0b2bc;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(214, 199, 199);
+  box-shadow: 5px 3px 10px rgba(0,0,0,0.25);
+}
+
+.price-button:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+.amount-text {
+  display: none;
+}
+
+.price-toggle:checked + .price-button .default-text {
+  display: none;
+}
+
+.price-toggle:checked + .price-button .amount-text {
+  display: inline;
+}
+
+/* ======================
+   Our Story Section
+   ====================== */
+.ourstory-section {
+  position: relative;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(rgba(233,229,250,0.9), rgba(222,218,238,0.9)),
+              url('Luna-pics/Final logo.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+.Virginia-pic {
+  position: absolute;
+  top: 85px;
+  left: 28%;
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 5px 3px 10px rgba(0,0,0,0.45);
+}
+
+.ourstory-title {
+  font-size: 120px;
+  font-weight: 200;
+  letter-spacing: 50px;
+  margin: 0 0 20px 0;
+  text-align: center;
+  background-color: rgba(236,248,248,0.6);
+  width: 100%;
+}
+
+.story-toggle {
+  display: none;
+}
+
+.ourstory-content {
+  max-height: 250px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.story-toggle:checked ~ .ourstory-content {
+  max-height: 2000px;
+}
+
+.story-text {
+  font-size: 50px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.read-more::before {
+  content: "Read More ▼";
+}
+
+.story-toggle:checked ~ .read-more::before {
+  content: "Read Less ▲";
+}
+
+/* ======================
+   Responsive Section
+   ====================== */
 @media screen and (max-width: 1024px) {
-
-  /* Header */
   .header-style {
     flex-direction: column;
     align-items: center;
@@ -19,11 +317,9 @@
     justify-content: center;
   }
 
-  .logo,
-  .header-image {
+  .logo, .header-image {
     width: 80%;
     max-height: 400px;
-    height: auto;
     margin: 20px 0;
   }
 
@@ -35,30 +331,128 @@
     text-align: center;
   }
 
-  .contact-box {
-    width: 90%;
-    margin: 20px 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 40px;
   }
 
-  .contact-text {
-    font-size: 36px;
-    margin: 5px 0;
-  }
-
-  .whatsapp-btn {
-    width: 60px;
-    height: 60px;
-    font-size: 28px;
-  }
-
-  /* Our Story Section */
   .ourstory-title {
     font-size: 80px;
     letter-spacing: 30px;
   }
 
   .story-text {
-    font-size: 36px
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+
+  .Virginia-pic {
+    width: 50%;
+    left: 25%;
+    top: 50px;
+  }
+
+  .read-more {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo, .header-image {
+    width: 90%;
+    max-height: 300px;
+    margin: 10px 0;
+  }
+
+  .header-text {
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .line-text {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+
+  .product-description {
+    font-size: 24px;
+  }
+
+  .price-button {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .ourstory-title {
+    font-size: 60px;
+    letter-spacing: 20px;
+  }
+
+  .story-text {
+    font-size: 24px;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .Virginia-pic {
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+    left: 0;
+    top: 0;
+    margin: 20px auto;
+  }
+
+  .read-more {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .product-headline-bracelets,
+  .product-headline-headpieces,
+  .product-headline-earrings {
+    font-size: 32px;
+    letter-spacing: 5px;
+    padding: 0 15px;
+  }
+
+  .header-text {
+    font-size: 28px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .ourstory-title {
+    font-size: 48px;
+    letter-spacing: 10px;
+  }
+
+  .story-text {
+    font-size: 20px;
+  }
+
+  .Virginia-pic {
+    width: 90%;
+    max-width: 250px;
+  }
+}
