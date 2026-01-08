@@ -1,100 +1,198 @@
-/* ===== MOBILE FIRST (phones <768px) ===== */
-@media (max-width: 768px) {
+/* ======================
+   Responsive CSS for tablets and phones
+   ====================== */
 
-    /* Paragraphs */
-    p {
-        font-size: 16px !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
+/* Tablets: up to 992px */
+@media screen and (max-width: 992px) {
+  .header-style {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /* Product grid */
-    .product-grid {
-        display: flex !important;
-        flex-direction: column !important; 
-        gap: 20px !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        max-width: 768px !important;
-    }
+  .left-section,
+  .middle-section,
+  .right-section {
+    flex: unset;
+    width: 100%;
+    justify-content: center;
+  }
 
-    /* Product box and card */
-    .product-box,
-    .product-card {
-        width: auto !important;
-        min-width: auto !important;
-        min-height: auto !important;
-    }
+  .logo {
+    width: 80%;
+    max-height: 400px;
+    margin: 20px 0;
+    height: auto;
+  }
 
-    /* Images inside product cards */
-    .bracelets-image,
-    .bracelet1-model {
-        width: auto !important;
-        height: auto !important;
-        position: relative !important;
-        margin: 0 !important;
-    }
+  .header-image {
+    width: 80%;
+    max-height: 400px;
+    margin: 20px 0;
+    height: auto;
+  }
 
-    /* Story section image */
-    .Virginia-pic {
-        position: relative !important;
-        margin-left: 0 !important;
-        margin-top: 20px !important;
-        width: 90% !important;
-        height: auto !important;
-    }
+  .header-text {
+    font-size: 60px;
+    letter-spacing: 20px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
-    /* Our Story text */
-    .story-text {
-        font-size: 18px !important;
-        text-align: center !important;
-        max-width: 768px !important;
-    }
+  .contact-box {
+    width: 90%;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
 
-    /* Section padding */
-    .ourstory-section,
-    .product-headline-bracelets,
-    .product-headline-headpieces,
-    .product-headline-earrings {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        font-size: 32px !important;
-        letter-spacing: 10px !important;
-        text-align: center !important;
-        max-width: 768px !important;
-    }
+  .contact-text {
+    font-size: 36px;
+    margin: 5px 0;
+  }
 
-    /* Price buttons */
-    .price-button {
-        width: 90% !important;
-        font-size: 24px !important;
-        line-height: 50px !important;
-    }
+  .whatsapp-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
 }
 
-    .header-style {
-      background-color:black;
-      display: flex !important;
-      flex-direction: row !important; 
-      justify-content: space-between !important;
-      margin-top: 0; 
-      padding-top: 0; 
-      width: 100% !important;
+/* Mobile phones: up to 600px */
+@media screen and (max-width: 600px) {
+  .header-style {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    }
+  .logo {
+    width: 90%;
+    max-height: 300px;
+    margin: 10px 0;
+    height: auto;
+  }
 
-    .ourstory-section {
-      max-width: 768px !important;
-      display: flex !important;
-      background: 
-        linear-gradient(rgba(233, 229, 250, 0.9), rgba(222, 218, 238, 0.9)),
-        url('Luna-pics/Final logo.PNG') !important;
-      background-size: cover !important;
-      background-position: center !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      padding: 50px;
-      box-sizing: border-box !important;
-      text-align: center !important;
-      margin-top: 60px !important;
-    }
+  .header-image {
+    width: 90%;
+    max-height: 300px;
+    margin: 10px 0;
+    height: auto;
+  }
+
+  .header-text {
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-box {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .contact-text {
+    font-size: 28px;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
+
+/* Mobile and small tablet */
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* smaller gap for mobile */
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: auto; /* allow grid to shrink */
+  }
+
+  .product-card {
+    min-width: auto;
+    min-height: auto; /* let height adjust to content */
+  }
+
+  .image-container {
+    height: auto; /* scale image height */
+  }
+
+  .line-text {
+    font-size: 30px; /* scale down headers */
+    letter-spacing: 10px;
+  }
+
+  .product-description {
+    font-size: 24px; /* smaller text */
+  }
+
+  .price-button {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .ourstory-title {
+    font-size: 80px;
+    letter-spacing: 30px;
+  }
+
+  .story-text {
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+
+  .Virginia-pic {
+    width: 50%;
+    max-width: 450px;
+    left: 25%;
+    top: 50px;
+  }
+
+  .read-more {
+    font-size: 28px;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 768px) {
+  .ourstory-title {
+    font-size: 60px;
+    letter-spacing: 20px;
+  }
+
+  .story-text {
+    font-size: 24px;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .Virginia-pic {
+    position: relative; /* stack below the title */
+    width: 80%;
+    max-width: 300px;
+    top: 0;
+    left: 0;
+    margin: 20px 0;
+  }
+
+  .read-more {
+    font-size: 22px;
+  }
+}
