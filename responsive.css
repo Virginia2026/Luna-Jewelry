@@ -2,8 +2,10 @@
    Responsive CSS for tablets and phones
    ====================== */
 
-/* Tablets: up to 992px */
-@media screen and (max-width: 992px) {
+/* ===== Tablets: up to 1024px ===== */
+@media screen and (max-width: 1024px) {
+
+  /* Header */
   .header-style {
     flex-direction: column;
     align-items: center;
@@ -17,18 +19,12 @@
     justify-content: center;
   }
 
-  .logo {
-    width: 80%;
-    max-height: 400px;
-    margin: 20px 0;
-    height: auto;
-  }
-
+  .logo,
   .header-image {
     width: 80%;
     max-height: 400px;
-    margin: 20px 0;
     height: auto;
+    margin: 20px 0;
   }
 
   .header-text {
@@ -57,142 +53,12 @@
     height: 60px;
     font-size: 28px;
   }
-}
 
-/* Mobile phones: up to 600px */
-@media screen and (max-width: 600px) {
-  .header-style {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    width: 90%;
-    max-height: 300px;
-    margin: 10px 0;
-    height: auto;
-  }
-
-  .header-image {
-    width: 90%;
-    max-height: 300px;
-    margin: 10px 0;
-    height: auto;
-  }
-
-  .header-text {
-    font-size: 36px;
-    letter-spacing: 10px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .contact-box {
-    width: 95%;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    margin: 10px 0;
-  }
-
-  .contact-text {
-    font-size: 28px;
-    margin: 5px 0;
-    text-align: center;
-  }
-
-  .whatsapp-btn {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-  }
-}
-
-/* Mobile and small tablet */
-@media screen and (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px; /* smaller gap for mobile */
-    padding-left: 20px;
-    padding-right: 20px;
-    min-width: auto; /* allow grid to shrink */
-  }
-
-  .product-card {
-    min-width: auto;
-    min-height: auto; /* let height adjust to content */
-  }
-
-  .image-container {
-    height: auto; /* scale image height */
-  }
-
-  .line-text {
-    font-size: 30px; /* scale down headers */
-    letter-spacing: 10px;
-  }
-
-  .product-description {
-    font-size: 24px; /* smaller text */
-  }
-
-  .price-button {
-    width: 150px;
-    height: 50px;
-    font-size: 24px;
-    line-height: 50px;
-  }
-}
-
-/* Tablets */
-@media screen and (max-width: 1024px) {
+  /* Our Story Section */
   .ourstory-title {
     font-size: 80px;
     letter-spacing: 30px;
   }
 
   .story-text {
-    font-size: 36px;
-    line-height: 1.5;
-    padding: 0 20px;
-  }
-
-  .Virginia-pic {
-    width: 50%;
-    max-width: 450px;
-    left: 25%;
-    top: 50px;
-  }
-
-  .read-more {
-    font-size: 28px;
-  }
-}
-
-/* Mobile phones */
-@media screen and (max-width: 768px) {
-  .ourstory-title {
-    font-size: 60px;
-    letter-spacing: 20px;
-  }
-
-  .story-text {
-    font-size: 24px;
-    line-height: 1.4;
-    padding: 0 10px;
-  }
-
-  .Virginia-pic {
-    position: relative; /* stack below the title */
-    width: 80%;
-    max-width: 300px;
-    top: 0;
-    left: 0;
-    margin: 20px 0;
-  }
-
-  .read-more {
-    font-size: 22px;
-  }
-}
+    font-size: 36px
