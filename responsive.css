@@ -11,7 +11,7 @@
     /* Product grid */
     .product-grid {
         display: flex !important;
-        flex-direction: column !important; /* stack products vertically */
+        flex-direction: column !important; 
         gap: 20px !important;
         padding-left: 10px !important;
         padding-right: 10px !important;
@@ -26,7 +26,6 @@
     }
 
     /* Images inside product cards */
-    .image-container,
     .bracelets-image,
     .bracelet1-model {
         width: 100% !important;
@@ -60,6 +59,7 @@
         font-size: 32px !important;
         letter-spacing: 10px !important;
         text-align: center !important;
+        width: 100% !important;
     }
 
     /* Price buttons */
@@ -69,3 +69,14 @@
         line-height: 50px !important;
     }
 }
+
+    .header-style {
+      background-color:black;
+      display: flex !important;
+      flex-direction: row !important; 
+      justify-content: space-between !important;
+      margin-top: 0; 
+      padding-top: 0; 
+      width: 100% !important;
+
+    }
