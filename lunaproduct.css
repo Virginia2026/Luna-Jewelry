@@ -1,0 +1,160 @@
+p {
+  font-family: Raleway, Arial;
+  margin: 0; 
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 0;
+  box-sizing: border-box;
+  min-width: 774px;
+  min-height: 840px; 
+}
+
+.product-box {
+ 
+  background-color: rgb(246, 247, 246);
+}
+
+.product-card {
+  min-width: 774px;
+  min-height: 840px; 
+  
+}
+
+.image-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 840px;
+  overflow: hidden;  
+}
+
+.swap-checkbox {
+  display: none; 
+}
+
+.bracelets-image,
+.bracelet1-model {  
+  object-fit: cover;       
+  object-position: center; 
+  border: 1px solid rgb(197, 171, 171);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;  
+  box-sizing: border-box;
+  width: 100%; 
+  height: 100%; 
+ }
+
+.bracelet1-model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;  
+}
+
+
+.swap-checkbox:checked + label .bracelets-image {
+  display: none; 
+}
+
+.swap-checkbox:checked + label .bracelet1-model {
+  display: block;
+}
+
+
+.bracelets-image:hover {
+  opacity: 0.6;
+  transition: opacity 0.2s ease; 
+
+}
+
+.product-info {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  word-break: break-word; 
+}
+
+.line-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 20px; 
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px; 
+  margin-top: 20px;
+  
+}
+
+.line-text::before,
+.line-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #333;  
+  margin:  10px 20px;                 
+}
+
+.product-description {
+  font-size: 40px; 
+  text-align: center;
+}
+
+
+.price-wrapper {
+  margin-top: 10px;
+}
+
+.price-button {
+  display: inline-block;
+  width: 250px;
+  height: 70px;
+  font-family: Arial;
+  color: #333;
+  line-height: 70px;
+  font-size: 40px;
+  font-weight: 200;
+  border-radius: 20px;
+  border: 3px solid #c0b2bc;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+  background-color: rgb(214, 199, 199);
+  margin-top: 10px;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.15s;    
+ 
+}
+
+.price-button:hover { 
+  opacity: 0.8;
+  transition: opacity 0.2s ease; 
+  color: black;
+}
+
+
+.amount-text {
+  display: none;  
+  color:#333;  
+}
+
+.price-toggle:checked + .price-button .default-text {
+  display: none;   
+}
+
+.price-toggle:checked + .price-button .amount-text {
+  display: inline; 
+}
+
+.price-toggle {
+  display: none;  /* hides the actual checkbox */
+}

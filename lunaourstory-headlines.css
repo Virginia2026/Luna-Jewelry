@@ -1,0 +1,161 @@
+p {
+  font-family: Raleway, Arial;
+  margin: 0; 
+}
+
+.page-content {
+  padding-top: 25px; 
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  gap: 20px; 
+}
+
+
+.product-headline-bracelets {
+  font-size: 100px; 
+  font-weight: 200;
+  letter-spacing: 40px;
+  background-color: rgb(219, 199, 199);
+  padding-left: 75px; 
+  margin-top: 60px;  
+}
+
+.product-headline-headpieces {
+  font-size: 100px; 
+  font-weight: 200;
+  letter-spacing: 40px;
+  background-color: rgb(195, 205, 218);
+  padding-left: 75px; 
+  margin-top: 60px;  
+}
+
+.product-headline-earrings {
+  font-size: 100px; 
+  font-weight: 200;
+  letter-spacing: 40px;
+  background-color: rgb(210, 233, 220);
+  padding-left: 75px; 
+  margin-top: 60px; 
+}
+
+.ourstory-section { 
+  width: 100%;
+  display: flex;
+  background: 
+    linear-gradient(rgba(233, 229, 250, 0.9), rgba(222, 218, 238, 0.9)),
+    url('Luna-pics/Final logo.PNG');
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 60px; 
+}
+
+.Virginia-pic {
+  display: inline;
+  position: absolute;
+  border-radius: 20px;
+  width: 498px;
+  height: 485px;
+  object-fit: cover;
+  margin-left: -1800px;
+  background-color: rgb(214, 199, 199);
+  margin-top: 10px;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.45);
+  transition: box-shadow 0.15s;   
+
+}
+
+.ourstory-title {
+  font-family: Raleway, Arial;
+  font-size: 120px;
+  font-weight: 200;
+  letter-spacing: 50px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: white;
+  margin: 0 0 20px 0;
+  text-align: center;
+  background-color:rgba(236, 248, 248, 0.6);
+  width: 100%; 
+}
+
+.story-toggle {
+  display: none;
+}
+
+.ourstory-content {
+  max-height: 250px;         
+  overflow: hidden;           
+  transition: max-height 0.5s ease;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.story-toggle:checked ~ .ourstory-content {
+  max-height: 2000px;         
+}
+
+.story-text {
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 50px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.read-more {
+  display: inline-block;         
+  text-align: center;
+  font-family: "Google Sans Flex", sans-serif; 
+  font-size: 36px;              
+  font-weight: 700;              
+  color: #333;                   
+  cursor: pointer;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  position: relative;             
+}
+
+.read-more::before {
+  content: "Read More ▼";
+}
+
+.story-toggle:checked ~ .read-more::before {
+  content: "Read Less ▲";
+}
+
+
+/* Common arrow styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10; /* always on top of images */
+  transition: background 0.3}
+
+  /* Left arrow */
+.left-arrow {
+  left: 20px;   /* move to the left edge */
+}
+
+/* Right arrow */
+.right-arrow {
+  right: 20px;  /* move to the right edge */
+}

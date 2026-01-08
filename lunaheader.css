@@ -1,0 +1,140 @@
+p {
+  font-family: Raleway, Arial ;
+}
+
+.header-style {
+  background-color:black;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  margin-top: 0; 
+  padding-top: 0; 
+  width: 100%;
+
+}
+
+.left-section {
+  display: flex; 
+  align-items: center; 
+  }
+
+.logo {
+  flex: 1;
+  height: 905px;
+  width: 1250px;  
+  margin-left: 50px;
+  object-fit: cover;
+  z-index: 1;
+  border: solid;  
+  border-color: rgba(224, 237, 248, 0.904);
+  border-width: 0.1px; 
+  }
+
+  .middle-section {
+  flex: 1;  
+  display: flex; 
+  align-items: center;
+  height: 1000px; 
+  }
+  
+  .header-image { 
+  flex: 1; 
+  height: 1000px; 
+  object-fit: cover; 
+  margin-left: -150px; 
+  }
+ 
+  
+
+  .right-section {  
+  background-color: black; 
+  padding-right: 1px; 
+  }
+
+
+  .header-text {
+    display: grid; 
+    grid-template-rows: 120px 120px 120px;
+    color: white; 
+    font-size: 120px; 
+    font-weight: 100;
+    letter-spacing: 40px;
+    align-items: center;   
+    margin-top: 240px;
+    margin-bottom: 50px; 
+    margin-left: 20px; 
+   
+  }
+
+  .right-section-buttons {  
+  display: flex; 
+  align-items: centre;
+  background-color: black;
+ 
+  }
+
+
+
+  .menu-button {
+  background-color: black;  
+  margin-left: 20px;
+  margin-top: 50px; 
+  }
+ 
+  .menu-icon {
+  height: 120px;
+  }
+ 
+ 
+.toggle {
+  display: none;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  width: 900px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.contact-text {
+  font-family: Arial;
+  font-size: 60px;
+  color: #555;
+  cursor: pointer; 
+}
+
+.number-text {
+  display: none;
+}
+
+
+.toggle:checked + .contact-text .default-text {
+  display: none;
+}
+
+.toggle:checked + .contact-text .number-text {
+  display: inline;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  border: none;
+  color: white;
+  font-size: 36px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
