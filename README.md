@@ -1,2 +1,2 @@
 # Luna-Jewelry
-Luna Custom Latin Competition Jewelry was born from the passion and experience of a competitive Latin and ballroom dancer who understands what it truly means to stand out on the dance floor, on a budget.
+Luna Custom Latin Competition Jewelry was born from the passion and experience of a competitive Latin and ballroom dancer who understands what it truly means to stand out on the dance floor. Designed with dancers in mind, each Luna piece is created to complement the movement, energy, and style of the dress while enhancing the dancer’s presence. Most importantly, Luna offers custom-made pieces to suit every dancer’s taste, vision, and budget. Let Luna Custom Latin Competition Jewelry bring your vision to life.
